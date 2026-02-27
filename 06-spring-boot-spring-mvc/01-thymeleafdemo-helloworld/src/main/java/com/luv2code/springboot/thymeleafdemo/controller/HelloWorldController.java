@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class HelloWorldController {
 
-    @PostMapping("/showForm")
+    @GetMapping("/showForm")
     public String showForm(){
         return "helloworld-form";
     }
