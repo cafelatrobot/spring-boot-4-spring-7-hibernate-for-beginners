@@ -22,7 +22,11 @@ Favorite P Language: <span th:text="${student.favoriteLanguage}"></span>
 
 <br><br>
 
-Operating Systems: <span th:text="${student.operatingSystems}"></span>
+F Operating Systems:
+
+<ul>
+    <li th:each="tempSystem : ${student.operatingSystems}" th:text="${tempSystem}"></li>
+</ul>
 </body>
 
 </html>
