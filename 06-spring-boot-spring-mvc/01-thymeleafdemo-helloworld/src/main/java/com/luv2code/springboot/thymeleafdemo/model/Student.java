@@ -1,11 +1,13 @@
 package com.luv2code.springboot.thymeleafdemo.model;
 
+import java.util.List;
+
 public class Student {
     private String firstName;
     private String lastName;
     private String country;
     private String favoriteLanguage;
-    private String operatingSystems;
+    private List<String> operatingSystems;
 
     public Student(){
 
@@ -43,11 +45,11 @@ public class Student {
         this.favoriteLanguage = favoriteLanguage;
     }
 
-    public String getOperatingSystems() {
+    public List<String> getOperatingSystems() {
         return operatingSystems;
     }
 
-    public void setOperatingSystems(String operatingSystems) {
+    public void setOperatingSystems(List<String> operatingSystems) {
         this.operatingSystems = operatingSystems;
     }
 }
