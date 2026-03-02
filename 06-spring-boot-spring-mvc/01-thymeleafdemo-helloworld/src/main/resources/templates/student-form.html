@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="eng" xmlns:th="http://www.thymeleaf.org">
+<html lang="eng" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="utf-8">
@@ -22,6 +22,15 @@
     <select th:field="*{country}">
         <option th:each="tempCountry : ${countries}" th:value="${tempCountry}" th:text="${tempCountry}"></option>
     </select>
+
+    <br><br>
+
+    Favorite Programming Language
+    <input type="radio" th:field="*{favoriteLanguage}"
+                        th:each="tempLang : ${languages}"
+                        th:value="${tempLang}"
+                        th:text="${tempLang}" />
+
 
     <br><br>
 
